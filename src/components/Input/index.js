@@ -1,5 +1,7 @@
+import { MainInput } from "./styles";
+
 const Input = (props) => {
-  return <input {...props} />;
+  return <MainInput {...props} />;
 };
 
 export default Input;
