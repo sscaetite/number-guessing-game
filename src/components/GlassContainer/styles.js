@@ -6,4 +6,7 @@ export const MainWrapper = styled.div`
   box-shadow: 6px 12px 17px 6px rgba(0, 0, 0, 0.14);
   backdrop-filter: blur(6px);
   border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 `;
