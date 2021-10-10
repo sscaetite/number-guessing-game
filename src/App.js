@@ -1,19 +1,22 @@
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import LoseArea from "./pages/LoseArea";
+import MainArea from "./pages/MainArea";
+import WinArea from "./pages/WinArea";
+
+// localhost:3000/
+
 const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <p>Em construção.</p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Router>
+        <Switch>
+          <Route exact path="/" component={MainArea} />
+          <Route path="/win" component={WinArea} />
+          <Route path="/lose" component={LoseArea} />
+        </Switch>
+      </Router>
     </div>
   );
-}
+};
 
 export default App;
