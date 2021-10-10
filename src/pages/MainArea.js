@@ -1,5 +1,11 @@
+import MainContainer from "../components/MainContainer";
+
 const MainArea = () => {
-  return <div>Main area</div>;
+  return (
+    <MainContainer>
+      <div>Main area</div>
+    </MainContainer>
+  );
 };
 
 export default MainArea;
