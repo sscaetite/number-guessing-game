@@ -1,5 +1,7 @@
+import { MainWrapper } from "./styles";
+
 const Spacer = () => {
-  return <div></div>;
+  return <MainWrapper></MainWrapper>;
 };
 
 export default Spacer;
