@@ -1,5 +1,7 @@
+import { MainWrapper } from "./styles";
+
 const GlassContainer = ({ children }) => {
-  return <div>{children}</div>;
+  return <MainWrapper>{children}</MainWrapper>;
 };
 
 export default GlassContainer;
