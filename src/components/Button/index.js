@@ -1,7 +1,7 @@
 import { MainButton } from "./styles";
 
-const Button = ({ children }) => {
-  return <MainButton>{children}</MainButton>;
+const Button = ({ children, ...props }) => {
+  return <MainButton {...props}>{children}</MainButton>;
 };
 
 export default Button;
