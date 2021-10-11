@@ -13,7 +13,7 @@ const WinArea = () => {
   };
 
   return (
-    <MainContainer>
+    <MainContainer gradient={["#07BA19", "#09AEA4"]}>
       <GlassContainer>
         <Text>Parabéns, você ganhou!</Text>
         <Spacer />

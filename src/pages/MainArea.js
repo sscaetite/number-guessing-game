@@ -46,7 +46,7 @@ const MainArea = () => {
   };
 
   return (
-    <MainContainer>
+    <MainContainer gradient={["#E933ED", "#1F74F3"]}>
       <GlassContainer>
         <Text>Adivinhe o número</Text>
         <Spacer />

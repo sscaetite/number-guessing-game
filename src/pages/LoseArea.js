@@ -13,7 +13,7 @@ const LoseArea = () => {
   };
 
   return (
-    <MainContainer>
+    <MainContainer gradient={["#E1296C", "#AE4409"]}>
       <GlassContainer>
         <Text>Você perdeu :(</Text>
         <Spacer />
