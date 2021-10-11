@@ -59,7 +59,12 @@ const MainArea = () => {
           onChange={changeGuessValue}
         />
         <Spacer />
-        <Button onClick={handleGuess}>Enviar</Button>
+        <Button
+          disabled={!guessNumber || guessNumber < 0 || guessNumber > 10}
+          onClick={handleGuess}
+        >
+          Enviar
+        </Button>
       </GlassContainer>
     </MainContainer>
   );
