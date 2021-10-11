@@ -48,11 +48,11 @@ const MainArea = () => {
   return (
     <MainContainer gradient={["#E933ED", "#1F74F3"]}>
       <GlassContainer>
-        <Text size={42}>Adivinhe o número</Text>
+        <Text size={28}>Adivinhe o número</Text>
         <Spacer />
-        <Text size={26}>Você ainda tem {remainingChances} chances</Text>
+        <Text size={21}>Você ainda tem {remainingChances} chances</Text>
         <Spacer />
-        <Text size={25}>{alertText}</Text>
+        <Text size={18}>{alertText}</Text>
         <Spacer />
         <Input
           placeholder="Entre com um número entre 0 e 10"

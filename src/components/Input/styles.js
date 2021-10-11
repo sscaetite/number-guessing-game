@@ -12,6 +12,7 @@ export const MainInput = styled.input`
   text-align: center;
   font-size: 1.2em;
   font-weight: 400;
+  min-width: 400px;
 
   &::placeholder {
     color: white;
