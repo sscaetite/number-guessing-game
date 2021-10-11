@@ -1,3 +1,4 @@
+import { useHistory } from "react-router";
 import Button from "../components/Button";
 import GlassContainer from "../components/GlassContainer";
 import MainContainer from "../components/MainContainer";
@@ -5,6 +6,12 @@ import Spacer from "../components/Spacer";
 import Text from "../components/Text";
 
 const LoseArea = () => {
+  const { push } = useHistory();
+
+  const goToMainPage = () => {
+    push("/");
+  };
+
   return (
     <MainContainer>
       <GlassContainer>
@@ -12,7 +19,7 @@ const LoseArea = () => {
         <Spacer />
         <Text>Você não adivinhou o número correto</Text>
         <Spacer />
-        <Button>Jogar novamente</Button>
+        <Button onClick={goToMainPage}>Jogar novamente</Button>
       </GlassContainer>
     </MainContainer>
   );
