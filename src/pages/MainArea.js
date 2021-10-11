@@ -10,7 +10,7 @@ import { getDrawNumber } from "../utils/numberFunctions";
 
 const MainArea = () => {
   const [drawNumber, setDrawNumber] = useState();
-  const [guessNumber, setGuessNumber] = useState();
+  const [guessNumber, setGuessNumber] = useState("");
   const [alertText, setAlertText] = useState("Insira um número para começar");
   const [remainingChances, setRemainingChances] = useState(3);
   const { push } = useHistory();
@@ -20,7 +20,9 @@ const MainArea = () => {
   }, []);
 
   const changeGuessValue = (event) => {
-    const guessValue = parseInt(event.target.value);
+    const validatedNumber = parseInt(event.target.value.replace(/\D/g, ""));
+    const guessValue =
+      !!validatedNumber || validatedNumber === 0 ? validatedNumber : "";
     setGuessNumber(guessValue);
   };
 
@@ -57,10 +59,11 @@ const MainArea = () => {
         <Input
           placeholder="Entre com um número entre 0 e 10"
           onChange={changeGuessValue}
+          value={guessNumber}
         />
         <Spacer />
         <Button
-          disabled={!guessNumber || guessNumber < 0 || guessNumber > 10}
+          disabled={(!guessNumber && guessNumber !== 0) || guessNumber > 10}
           onClick={handleGuess}
         >
           Enviar

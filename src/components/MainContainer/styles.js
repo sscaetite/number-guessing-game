@@ -16,11 +16,15 @@ export const ChildrenContainer = styled.div`
 export const GradientCircle = styled.div`
   position: absolute;
   left: 20%;
-  top: 20%;
+  top: 10%;
   width: 25vw;
   height: 25vw;
   border-radius: 50%;
   background: ${({ gradient }) =>
-    "linear-gradient(180deg, " + gradient[0] + " 0%, " + gradient[1] + " 100%)"};
+    "linear-gradient(180deg, " +
+    gradient[0] +
+    " 0%, " +
+    gradient[1] +
+    " 100%)"};
   z-index: 0;
 `;
