@@ -1,10 +1,10 @@
 import { GradientCircle, MainWrapper, ChildrenContainer } from "./styles";
 
-const MainContainer = ({ children }) => {
+const MainContainer = ({ children, gradient }) => {
   return (
     <MainWrapper>
       <ChildrenContainer>{children}</ChildrenContainer>
-      <GradientCircle />
+      <GradientCircle gradient={gradient} />
     </MainWrapper>
   );
 };

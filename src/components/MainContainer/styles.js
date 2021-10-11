@@ -20,6 +20,7 @@ export const GradientCircle = styled.div`
   width: 25vw;
   height: 25vw;
   border-radius: 50%;
-  background: linear-gradient(180deg, #ed336d 0%, #e933ed 0.01%, #1f74f3 100%);
+  background: ${({ gradient }) =>
+    "linear-gradient(180deg, " + gradient[0] + " 0%, " + gradient[1] + " 100%)"};
   z-index: 0;
 `;
