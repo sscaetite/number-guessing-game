@@ -15,9 +15,9 @@ const WinArea = () => {
   return (
     <MainContainer gradient={["#07BA19", "#09AEA4"]}>
       <GlassContainer>
-        <Text>Parabéns, você ganhou!</Text>
+        <Text size={42}>Parabéns, você ganhou!</Text>
         <Spacer />
-        <Text>Você adivinhou o número correto</Text>
+        <Text size={26}>Você adivinhou o número correto</Text>
         <Spacer />
         <Button onClick={goToMainPage}>Jogar novamente</Button>
       </GlassContainer>

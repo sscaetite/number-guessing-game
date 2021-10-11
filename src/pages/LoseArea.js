@@ -15,9 +15,9 @@ const LoseArea = () => {
   return (
     <MainContainer gradient={["#E1296C", "#AE4409"]}>
       <GlassContainer>
-        <Text>Você perdeu :(</Text>
+        <Text size={42}>Você perdeu :(</Text>
         <Spacer />
-        <Text>Você não adivinhou o número correto</Text>
+        <Text size={26}>Você não adivinhou o número correto</Text>
         <Spacer />
         <Button onClick={goToMainPage}>Jogar novamente</Button>
       </GlassContainer>
